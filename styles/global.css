@@ -36,3 +36,19 @@ img {
 button {
   font: inherit;
 }
+
+header {
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items:center;
+  padding-top: 92px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 95px;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-bottom: 82px;
+}

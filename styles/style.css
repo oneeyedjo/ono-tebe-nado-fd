@@ -1,1 +1,305 @@
-/* место для вашего кода */
+/*Шапка*/
+
+.header__links-list {
+  top: 133px;
+  display: flex;
+  gap: 32px;
+  font-size: 18px;
+  font-style: normal;
+  text-underline-offset: 4px;
+  list-style: circle;
+}
+
+.header__links-list-item_no-bullit {
+  list-style-type: none;
+}
+
+.header__logo-image {
+  display: flex;
+  width: 148px;
+  height: 105px;
+}
+
+.header__address {
+  display: flex;
+  flex-direction: column;
+  justify-self: end;
+  max-width: 238px;
+  max-height: 98px;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 24.3px;
+  text-underline-offset: 4px;
+}
+
+.header__links-list-item:last-child {
+  margin-left: 2px;
+}
+
+/*Отсюда начинатеся первая страница*/
+
+.cover {
+  position: relative;
+  min-height: 757px;
+  padding-bottom: 180px;
+}
+
+.background-img {
+  position: absolute;
+  right: 0;
+  left: 0;
+  z-index: -1;
+  width: 1100px;
+  height: 757px;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.cover__title {
+  font-size: 100px;
+  text-transform: uppercase;
+}
+
+.aligned-text_left {
+  position: absolute;
+  top: 165px;
+  right: 764px;
+  bottom: 477px;
+  left: 50px;
+  z-index: 1;
+  color: white;
+  letter-spacing: 30px;
+}
+
+.aligned-text_center {
+  position: absolute;
+  top: 300px;
+  right: 380.5px;
+  bottom: 342px;
+  left: 380.5px;
+  z-index: 1;
+  color: white;
+  letter-spacing: 30px;
+}
+
+.aligned-text_right {
+  position: absolute;
+  top: 435px;
+  right: 50px;
+  bottom: 207px;
+  left: 663px;
+  z-index: 1;
+  color: white;
+  letter-spacing: 30px;
+}
+
+.cover__description-text {
+  position: absolute;
+  top: 668px;
+  right: 413px;
+  bottom: 61px;
+  left: 50px;
+  z-index: 1;
+  color: white;
+  font-size: 22px;
+  text-transform: uppercase;
+  word-spacing: 18.5px;
+  white-space: nowrap;
+}
+
+.bet-button {
+  position: absolute;
+  top: 656px;
+  right: 50px;
+  left: 794px;
+  z-index: 1;
+  width: 256px;
+  height: 50px;
+  border: 1px solid white;
+  padding-top: 12px;
+  padding-right: 32px;
+  padding-bottom: 11px;
+  padding-left: 31px;
+  color: white;
+  font-size: 22px;
+  text-transform: uppercase;
+  background-color: transparent;
+  white-space: nowrap;
+}
+
+/*вторая страница лоты */
+
+.lots__heading {
+  padding-top: 180px;
+  padding-bottom: 27px;
+  padding-left: 64px;
+  color: black;
+  font-size: 40px;
+}
+
+.lots__card-list {
+  display: flex;
+  gap: 25px;
+  padding-right: 24px;
+  padding-left: 24px;
+  list-style: none;
+}
+
+.lots__card-list-item {
+  width: 334px;
+  min-height: 596px;
+}
+
+.card_type_film {
+  background-image: url(../images/card-lot-01.jpg);
+}
+
+.card_type_book {
+  background-image: url(../images/card-lot-02.jpg);
+}
+
+.card_type_picture {
+  background-image: url(../images/card-lot-03.jpg);
+}
+
+.card_type_film,
+.card_type_book,
+.card_type_picture {
+  position: relative;
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 334px;
+  height: 596px;
+  padding: 48px 40px;
+  background-position: center;
+  background-size: cover;
+}
+
+.card__title {
+  z-index: 1;
+  color: white;
+  font-weight: 700;
+  font-size: 22px;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+  text-transform: uppercase;
+}
+
+.card__text {
+  z-index: 1;
+  color: white;
+  font-size: 20px;
+}
+
+.lots__look-more-link {
+  padding-top: 30px;
+  padding-left: 64px;
+  color: #000;
+  font-size: 20px;
+  text-underline-offset: 3.5px;
+}
+
+/* треться страница*/
+
+.about__column {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  padding-top: 155px;
+  padding-right: 24px;
+  padding-bottom: 181px;
+  padding-left: 71px;
+}
+
+.about__logo {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  background-color: #000;
+}
+
+.about__logo-image {
+  width: 148px;
+  height: 114px;
+}
+
+.about__title {
+  padding-top: 101px;
+  padding-bottom: 100px;
+  padding-left: 72px;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.about__text {
+  display: grid;
+  grid-column: 2;
+  gap: 24px;
+  min-width: 693px;
+  min-height: 312px;
+  padding-left: 72px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+/*подвал*/
+
+.footer__address {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  max-height: 98px;
+  padding-left: 50px;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 24.3px;
+  text-underline-offset: 4px;
+}
+
+.footer__menu-list {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+  font-size: 18px;
+  font-style: normal;
+}
+
+.footer__menu-link_active {
+  list-style-type: none;
+}
+
+.footer__menu-list-item {
+  text-underline-offset: 4px;
+  list-style-type: none;
+}
+
+.footer__social-list {
+  display: flex;
+  justify-self: end;
+  gap: 48px;
+  padding-right: 50px;
+  list-style-type: none;
+}
+
+.footer__social-icon {
+  width: 48px;
+  height: 48px;
+}
+
