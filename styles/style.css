@@ -154,10 +154,12 @@ address {
 
 .lots__card-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 25px;
   padding-right: 24px;
   padding-left: 24px;
   list-style: none;
+
 }
 
 .card_type_film {
